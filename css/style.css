@@ -27,7 +27,20 @@ main {
     height: fit-content;
 }
 
-#lista{
-    background-color: black;
-    color: black;
+#lista {
+    background-color: #f5f5f5;
+    color: black; 
+}
+
+#inputBuscar {
+    background-color: rgba(0, 0, 0, 0.432);
+    color: white;
+    margin-bottom: 20px;
+}
+
+#btnBuscar {
+    background-color: rgba(0, 0, 0, 0.432);
+    border-color: red;
+    color: red;
+    width: 50%;
 }
