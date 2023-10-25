@@ -73,9 +73,11 @@ function obtenerInformacion(pelicula) {
 
     // Configura el contenido del offcanvas
     offcanvas.innerHTML = `
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasTopLabel">${titulo}</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas offcanvas-custom">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTopLabel">${titulo}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
         </div>
 
         <div class="offcanvas-body">
@@ -84,8 +86,8 @@ function obtenerInformacion(pelicula) {
             <p>${generos}</p>
            
             <div class="dropdown-center">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    More
+                <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Más
                 </button>
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">Year: ${anio}</li>
@@ -96,6 +98,8 @@ function obtenerInformacion(pelicula) {
             </div>
         </div>
     `;
+    // Añadí estilos personalizados para el fondo del offcanvas
+    offcanvas.style.backgroundColor = '#FADCD6'
 
     // Muestra el offcanvas
     let myOffcanvas = new bootstrap.Offcanvas(offcanvas);
